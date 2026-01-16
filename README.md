@@ -1,102 +1,121 @@
-🏠 Housing Market Analysis
+🏠 Housing Market Analysis & Prediction
 
-A data analytics project exploring housing market trends, data preprocessing, modeling, and visualization to uncover insights about home sales, prices, and market patterns.
+An end-to-end data analytics and machine learning project focused on analyzing housing market trends and predicting housing-related outcomes using multiple statistical, machine learning, and deep learning models.
+This project covers data preprocessing, exploratory data analysis (EDA), model training, evaluation, explainability, and interactive visualization.
 
-This repository includes:
+📌 Project Objectives
 
-Data files (CSV, Excel)
-Python scripts for EDA, preprocessing & visualization
-Interactive dashboard/backend code
-Models and results for predictive analysis
-
-🧠 Project Overview
-
-The goal of this project is to analyze trends and patterns in housing market data. 
-This includes:
-Cleaning and preparing data
-Exploring relationships between key housing metrics
-Visualizing market trends over time or across regions
-Building simple models for predictive insight
-This analysis is useful for:
-Real estate professionals
-Data analysts
-Anyone interested in understanding housing data trends
+Analyze housing market trends using historical data
+Perform feature engineering and exploratory analysis
+Train and compare multiple predictive models
+Interpret model behavior using explainability techniques
+Deploy results through an interactive dashboard
 
 📂 Repository Structure
-├── app.py                      # Web app or dashboard script  
-├── data_preprocessing.py       # Data cleaning & preprocessing  
-├── eda.py                      # Exploratory Data Analysis code  
-├── Visualizations.py           # Plot & chart generation  
-├── *.csv                       # Raw and processed datasets  
-├── requirements.txt            # Python dependencies  
-├── *.png                       # Visualization images  
-└── README.md                  # This file  
+├── app.py                        # Interactive dashboard application
+├── data_preprocessing.py         # Data cleaning & feature engineering
+├── eda.py                        # Exploratory Data Analysis
+├── model_training.py             # Model training pipeline
+├── shap_analysis.py              # Model explainability using SHAP
+├── Visualizations.py             # Visualization utilities
+├── requirements.txt              # Project dependencies
+├── style.css                     # Dashboard styling
+├── *.csv / *.xlsx                # Housing datasets
+├── *.png                         # Generated visualizations
+├── *.pkl / *.h5                  # Trained model artifacts
+└── README.md                     # Project documentation
 
-📊 Data Description
+📊 Data Sources
 
-The datasets include housing market information such as:
-Sales counts
-Price distribution
+The project uses multiple housing-related datasets, including:
 City-level housing starts
-New construction and inventory data
-The raw data files (CSV/Excel) contain attributes relevant to:
-Median sales price
-Units sold
-Inventory
-Market indexes
+Median sale prices over time
+Housing inventory and sales counts
+New construction and census-based indicators
+Formats include CSV and Excel, covering both raw and processed data.
 
-🔧 Setup & Installation
-1️⃣ Clone this repository
+🤖 Models Used for Training
+
+The following models were trained, evaluated, and saved as artifacts:
+📈 Regression & Machine Learning Models
+Linear Regression (linear_regression.pkl)
+Lasso Regression (lasso_regression.pkl)
+Decision Tree Regressor (decision_tree.pkl)
+Gradient Boosting Regressor (gradient_boosting.pkl)
+XGBoost Regressor (xgboost.pkl)
+LightGBM Regressor (lightgbm.pkl)
+
+These models were compared using performance metrics stored in:
+
+model_comparison.csv
+model_metrics.json
+
+🧠 Deep Learning Model
+
+LSTM (Long Short-Term Memory) Neural Network
+(lstm_model.h5)
+Used for time-series modeling of housing market trends.
+
+⚙️ Supporting Artifacts
+
+Feature Scaler (scaler.pkl)
+Model Documentation (models.md)
+
+🔍 Model Explainability
+
+To ensure transparency and interpretability:
+
+SHAP (SHapley Additive exPlanations) was used
+Feature importance visualized in:
+shap_summary_plot.png
+Analysis implemented in:
+shap_analysis.py
+
+This helps understand which features most influence predictions.
+
+📊 Key Visualizations
+Generated visual outputs include:
+Median sale price trends over time
+Housing heat index distribution
+Percentage of homes sold above list price
+Correlation heatmaps
+Interactive dashboard visuals
+
+🚀 How to Run the Project
+1️⃣ Clone the repository
 git clone https://github.com/selvina123/Housing-market-analysis.git
 cd Housing-market-analysis
 
 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Run scripts or app
-
-Run EDA:
+3️⃣ Run analysis scripts
 python eda.py
-
-Run preprocessing:
 python data_preprocessing.py
-Launch dashboard (if applicable):
+python model_training.py
+
+4️⃣ Launch the dashboard
 python app.py
 
-📈 Key Features & Analysis
+🛠️ Technologies Used
 
-✅ Exploratory Data Analysis
-Correlation heatmaps
-Trends over time
-Distribution analysis
+Python
+Pandas, NumPy
+Scikit-learn
+XGBoost, LightGBM
+TensorFlow / Keras (LSTM)
+Matplotlib, Seaborn
+SHAP
+Git & GitHub
 
-✅ Preprocessing Pipeline
-Clean raw CSV/Excel data
-Merge & format datasets
-Prepare for modeling
+📌 Key Takeaways
 
-✅ Visualizations
-Interactive and static charts
-Insights into housing patterns
+Compared classical regression, tree-based, ensemble, and deep learning models
+Demonstrated model performance trade-offs
+Applied explainable AI (XAI) techniques
+Delivered results via an interactive application
 
-📌 What You Can Learn
-
-🔹 How housing markets evolve over time
-🔹 Correlation between variables like price, starts, new construction
-🔹 How to structure an analytics project for clarity and insights
-
-🛠️ Tools & Technologies
-Technology	Purpose
-Python	Data analysis & scripting
-Pandas	Data wrangling
-Matplotlib / Seaborn	Visualizations
-Flask / Dash	Dashboard or interactive app
-Git	Version control
-🤝 Contributing
-
-This project is open for improvements!
-Feel free to submit:
-Bug fixes
-Enhancements (better visualization, models)
-Updated documentation
-
+👩‍💻 Author
+Selvina Swarna
+Graduate Student – Information Systems
+Syracuse University
