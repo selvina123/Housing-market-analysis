@@ -88,12 +88,19 @@ python app.py
 🛠️ Technologies Used
 
 Python
+
 Pandas, NumPy
+
 Scikit-learn
+
 XGBoost, LightGBM
+
 TensorFlow / Keras (LSTM)
+
 Matplotlib, Seaborn
+
 SHAP
+
 Git & GitHub
 
 📌 Key Takeaways
