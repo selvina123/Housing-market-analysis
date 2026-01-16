@@ -68,11 +68,13 @@ Correlation heatmaps
 Interactive dashboard visuals
 
 🚀 How to Run the Project
+
 1️⃣ Clone the repository
 git clone https://github.com/selvina123/Housing-market-analysis.git
 cd Housing-market-analysis
 
 2️⃣ Install dependencies
+
 pip install -r requirements.txt
 
 3️⃣ Run analysis scripts
