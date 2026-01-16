@@ -12,18 +12,18 @@ Interpret model behavior using explainability techniques
 Deploy results through an interactive dashboard
 
 📂 Repository Structure
-├── app.py                        # Interactive dashboard application
-├── data_preprocessing.py         # Data cleaning & feature engineering
-├── eda.py                        # Exploratory Data Analysis
-├── model_training.py             # Model training pipeline
-├── shap_analysis.py              # Model explainability using SHAP
-├── Visualizations.py             # Visualization utilities
-├── requirements.txt              # Project dependencies
-├── style.css                     # Dashboard styling
-├── *.csv / *.xlsx                # Housing datasets
-├── *.png                         # Generated visualizations
-├── *.pkl / *.h5                  # Trained model artifacts
-└── README.md                     # Project documentation
+ app.py                        # Interactive dashboard application
+ data_preprocessing.py         # Data cleaning & feature engineering
+ eda.py                        # Exploratory Data Analysis
+ model_training.py             # Model training pipeline
+ shap_analysis.py              # Model explainability using SHAP
+ Visualizations.py             # Visualization utilities
+ requirements.txt              # Project dependencies
+ style.css                     # Dashboard styling
+ *.csv / *.xlsx                # Housing datasets
+ *.png                         # Generated visualizations
+ *.pkl / *.h5                  # Trained model artifacts
+ README.md                     # Project documentation
 
 📊 Data Sources
 
